@@ -38,6 +38,10 @@
     isExtinct = undefined
   }
 
+  if (typeof isNotExtinct === 'undefined') {
+    isNotExtinct = undefined
+  }
+
   if (typeof isTriassic === 'undefined') {
     isTriassic = undefined
   }
@@ -48,22 +52,6 @@
 
   if (typeof isCretaceous === 'undefined') {
     isCretaceous = undefined
-  }
-
-  if (typeof isFirstAlphabeticallyBySpecies === 'undefined') {
-    isFirstAlphabeticallyBySpecies = undefined
-  }
-
-  if (typeof extinctIsLast === 'undefined') {
-    extinctIsLast = undefined
-  }
-
-  if (typeof carnivoreIsFirst === 'undefined') {
-    carnivoreIsFirst = undefined
-  }
-
-  if (typeof isInPeriodOrder === 'undefined') {
-    isInPeriodOrder = undefined
   }
 
   if (typeof singularizeDinos === 'undefined') {
@@ -110,13 +98,10 @@ module.exports = {
   makeExtinct,
   isCarnivore,
   isExtinct,
+  isNotExtinct,
   isTriassic,
   isJurassic,
   isCretaceous,
-  isFirstAlphabeticallyBySpecies,
-  extinctIsLast,
-  carnivoreIsFirst,
-  isInPeriodOrder,
   singularizeDinos,
   truncateDinos,
   makeAllExtinct,
