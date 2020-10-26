@@ -1,6 +1,6 @@
 # Datasaur
 
-Notes:
+### Notes
 
 * It's a usual fork it, clone it, run `jest --watch-all` type of exercise.
 * You'll practice your `map`, `filter` using helper functions!
