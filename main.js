@@ -102,23 +102,6 @@
     notTriassic = undefined
   }
 
-  if (typeof bySpecies === 'undefined') {
-    bySpecies = undefined
-  }
-
-  if (typeof byExtinctLast === 'undefined') {
-    byExtinctLast = undefined
-  }
-
-  if (typeof byCarnivoresFirst === 'undefined') {
-    byCarnivoresFirst = undefined
-  }
-
-  if (typeof byPeriod === 'undefined') {
-    byPeriod = undefined
-  }
-
-
 
 module.exports = {
   makeDino,
@@ -143,8 +126,4 @@ module.exports = {
   notExtinct,
   triassicOnly,
   notTriassic,
-  bySpecies,
-  byExtinctLast,
-  byCarnivoresFirst,
-  byPeriod,
 }
