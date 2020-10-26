@@ -1,3 +1,4 @@
+const dinos = require('./dinos.js');
 const {
   makeDino,
   makeSingular,
@@ -19,7 +20,6 @@ const {
   notTriassic,
 } = require('./main.js')
 
-const dinos = require('./dinos.js');
 
 let originalDinos = [];
 
