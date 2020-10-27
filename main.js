@@ -38,11 +38,19 @@ const makeExtinct = function(makeDino) {
 }
 
 const isCarnivore = function(makeDino) {
-  return makeDino.carnivore;
+  return makeDino.carnivore === true;
+}
+
+const isHerbivore = function(makeDino) {
+  return makeDino.carnivore !== true;
 }
 
 const isExtinct = function(makeDino) {
-  return makeDino.extinct;
+  return makeDino.extinct === true;
+}
+
+const isNotExtinct = function(makeDino) {
+  return makeDino.extinct !== true;
 }
 
 const isTriassic = function(makeDino) {
@@ -99,7 +107,7 @@ const carnivoresOnly= function(makeDino) {
 const herbivoresOnly = function(makeDino) {
   const herbivore = [];
   for(const dino of makeDino) {
-    if(!isCarnivore(dino)) {
+    if(isHerbivore(dino)) {
       herbivore.push(dino);
     }
   }
@@ -119,7 +127,7 @@ const extinctOnly = function(makeDino) {
 const notExtinct = function(makeDino) {
   const notExtinct = [];
   for(const dino of makeDino) {
-    if(!isExtinct(dino)) {
+    if(isNotExtinct(dino)) {
       notExtinct.push(dino)
     }
   }
@@ -247,4 +255,5 @@ module.exports = {
   notExtinct,
   triassicOnly,
   notTriassic,
+  isHerbivore,
 }
